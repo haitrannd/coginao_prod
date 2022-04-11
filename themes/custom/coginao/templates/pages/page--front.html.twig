@@ -1,0 +1,32 @@
+{{ attach_library('coginao/front-page') }}
+
+<div id="page-wrapper" class="layout-container front-page">
+
+  <header role="header">
+    {% include directory ~ '/templates/includes/footer.html.twig' %}
+  </header>
+
+  <main role="main">
+    <div class="layout-content">
+      <div class="welcome-wrapper row">
+        <div class="logo-wrapper col-5">
+          <img src="{{ page['base_url'] ~ '/' ~ directory ~ '/logo.svg' }}" alt="coginao">
+        </div>
+        <div class="welcome-block col-7">
+          <h1 class="welcome-tit">
+            <span>{{ 'Chào mừng!'|t }}</span>
+            <span>
+              {{ 'Hãy xem chúng tôi '|t }}
+              <span>{{ 'Có Gì Nào?'|t }}</span>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer role="footer">
+    {% include directory ~ '/templates/includes/footer.html.twig' %}
+  </footer>
+
+</div>

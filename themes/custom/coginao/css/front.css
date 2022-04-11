@@ -1,0 +1,34 @@
+.welcome-wrapper.row {
+    margin: 0;
+    height: calc(100vh - 79px);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 0 30px;
+}
+
+.welcome-block {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.welcome-block .welcome-tit {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.welcome-block .welcome-tit>span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome-block .welcome-tit>span>span {
+    color: #f1881f;
+}

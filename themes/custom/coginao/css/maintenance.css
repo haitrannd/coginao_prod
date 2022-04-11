@@ -1,0 +1,41 @@
+.maintenance-page .dialog-off-canvas-main-canvas {
+    overflow: hidden;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.maintenance-page .container {
+    height: 100vh;
+}
+
+.maintenance-page .row {
+    height: 100%;
+}
+
+.maintenance-page header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintenance-page main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.maintenance-page main h1 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+@media (max-width: 992px) {
+    .maintenance-page main {
+        align-items: center;
+        text-align: center;
+        text-shadow: 1px 1px 20px #333;
+        height: 220px;
+    }
+}

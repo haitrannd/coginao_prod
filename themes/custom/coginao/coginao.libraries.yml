@@ -1,0 +1,36 @@
+global-styling:
+  css:
+    theme:
+      libraries/bootstrap/css/bootstrap.min.css: {}
+      libraries/fontawesome/css/all.min.css: {}
+      css/common.css: {}
+      css/font.css: {}
+  js:
+    js/script.js: {}
+    libraries/bootstrap/js/bootstrap.bundle.min.js: {}
+    libraries/lazyload/jquery.lazyload.min.js: {}
+    libraries/fontawesome/js/all.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+
+fancybox:
+  css:
+    theme:
+      libraries/fancybox/fancybox.min.css: {}
+  js:
+    libraries/fancybox/fancybox.min.js: {}
+
+front-page:
+  css:
+    theme:
+      css/front.css: {}
+  js:
+    js/front.js: {}
+
+maintenance:
+  css:
+    theme:
+      css/maintenance.css: {}

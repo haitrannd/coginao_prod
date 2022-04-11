@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('coginao/maintenance') }}
+
+<div class="container">
+  <div class="row">
+    <header role="banner" class="col-lg-7">
+      {% if logo %}
+        <h1>
+          <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+            <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+          </a>
+        </h1>
+      {% endif %}
+
+      {% if site_name or site_slogan %}
+        {% if site_slogan %}
+          <div>{{ site_slogan }}</div>
+        {% endif %}
+      {% endif %}
+    </header>
+
+    <main role="main" class="col-lg-5">
+      {% if title %}
+        <h1>{{ title }}</h1>
+      {% endif %}
+
+      {{ page.highlighted }}
+
+      {{ page.content }}
+    </main>
+  </div>
+</div>
+
